@@ -11,13 +11,15 @@ export const metadata = {
   description: 'Sitio de artista de sbector',
 }
 
-export default function RootLayout({ children, }: {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`bg-zinc-900 text-gray-50 ${roboto.className}`}>
+    <html lang="es" className={`bg-stone-600 text-gray-50 ${roboto.className}`}>
       <body>
-          {children}
+        {children}
       </body>
     </html>
   )
