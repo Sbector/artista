@@ -2,16 +2,16 @@ import Link from "next/link"
 
 const links = [{
     label: 'about',
-    route: '../about'
+    route: '/about'
 }, {
     label: 'archivo',
-    route: '../archivo'
+    route: '/archivo'
 }, {
     label: 'blog',
-    route: '../blog'
+    route: '/blog'
 }, {
     label: 'contacto',
-    route: '../contacto'
+    route: '/contacto'
 }]
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
         text-center">
             <div className="
             py-3">
-                <Link href="../" className=" 
+                <Link href="/" className=" 
                 text-gray-200 
                 text-3xl">sbector</Link>
             </div>
