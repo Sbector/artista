@@ -1,3 +1,19 @@
+import { Metadata } from "next"
+import { Props } from "../../../types"
+
+export const generateMetadata = ({ params }: Props): Metadata => {
+    if (params.slug?.length === 1) {
+        return {
+            title: `${params.slug}`
+        }
+    } else {
+        return {
+            title: "obras"
+        }
+    }
+
+}
+
 export default function ObraLayout({
     params, children
 }: {

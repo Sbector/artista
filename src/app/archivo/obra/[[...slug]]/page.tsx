@@ -1,41 +1,31 @@
-import { Metadata } from "next"
+"use client"
+import { Obras } from "../../../constants"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Props } from "../../../types"
 
-export const generateMetadata = ( {params} : Props): Metadata => {
-    if(params.slug?.length === 1){
-        return {
-            title:`${params.slug}`
-        }
-    } else {
-        return {
-            title:"obras"
-        }
-    }
-    
-}
+export default function Obra({ params, }: Props) {
+    const pathname = usePathname()
 
-type Props = {
-    params: {
-        slug:string[]
-    }
-}
-
-export default function Obra( {params,}: Props ) {
-    if (params.slug?.length === 2){
+    if (params.slug?.length === 1 ) {
         return (
             <div>
-            <h1>{params.slug[0]}: {params.slug[1]}</h1>
-        </div>
+                <Link href="/archivo/obra">volver a obras</Link>
+                <h1>{params.slug}</h1>
+            </div>
         )
-    } else if (params.slug?.length === 1) {
+    } else {
         return (
             <div>
-                <h1>{params.slug[0]}</h1>
+                <h1>obras</h1>
+                <ul>
+                    {Obras.map(({ title, year, descripttion }) => (
+                        <li key={title}>
+                            <Link href={`obra/${title}`}>{title},{year}</Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         )
     }
-    return (
-        <div>
-            <h1>obra</h1>
-        </div>
-    )
 }
