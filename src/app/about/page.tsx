@@ -1,3 +1,12 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: {
+        absolute: "acerca de sbector"
+    },
+    description: "información sobre sbector"
+}
+
 export default function About() {
     return (
         <div>

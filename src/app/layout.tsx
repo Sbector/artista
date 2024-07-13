@@ -2,16 +2,22 @@ import './globals.css'
 import { Roboto_Mono } from 'next/font/google'
 import Header from './_components/Header'
 import Footer from './_components/Footer'
+import { Metadata } from 'next'
 
 const roboto = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
 })
 
-export const metadata = {
-  title: 'sbector',
-  description: 'Sitio de artista de sbector',
+export const metadata: Metadata = {
+  title: {
+    default: "sbector",
+    template: "%s | sbector"
+  },
+  description: "sitio del artista sbector"
 }
+
+
 
 export default function RootLayout({
   children,
