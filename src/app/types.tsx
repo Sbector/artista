@@ -9,3 +9,8 @@ export type Obra = {
     year: string
     descripttion: string
 }
+
+export type Section = {
+        label: string
+        route: string
+    }

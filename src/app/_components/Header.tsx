@@ -1,20 +1,11 @@
+"use client"
 import Link from "next/link"
-
-const links = [{
-    label: 'about',
-    route: '/about'
-}, {
-    label: 'archivo',
-    route: '/archivo'
-}, {
-    label: 'blog',
-    route: '/blog'
-}, {
-    label: 'contacto',
-    route: '/contacto'
-}]
+import { Sections } from "../constants"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
+    const pathname = usePathname()
+
     return (
         <header className="
         sticky 
@@ -41,15 +32,20 @@ export default function Header() {
                 max-w-md 
                 mx-auto 
                 px-4">
-                    {links.map(({ label, route }) => (
-                        <li key={route} className="
+                    {Sections.map(({ label, route }) => {
+                        const isActive = pathname.startsWith(route)
+                        console.log(isActive)
+                        return (
+                        <li key={route}
+                        className="
                         flex-auto 
                         mx-1">
-                            <Link href={route} className="
-                            text-gray-500 
-                            hover:text-gray-900">{label}</Link>
+                            <Link href={route} 
+                            className={`${pathname.includes(route) ? 
+                                'font-bold text-gray-600 hover:text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
+                            >{label}</Link>
                         </li>
-                    ))}
+                    )})}
                 </ul>
             </nav>
         </header>
