@@ -34,7 +34,6 @@ export default function Header() {
                 px-4">
                     {Sections.map(({ label, route }) => {
                         const isActive = pathname.startsWith(route)
-                        console.log(isActive)
                         return (
                         <li key={route}
                         className="

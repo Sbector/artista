@@ -34,7 +34,7 @@ export const Sections: Section [] = [
     }, /*{
         label: 'blog',
         route: '/blog'
-    }*/, {
+    },*/ {
         label: 'contacto',
         route: '/contacto'
     },
