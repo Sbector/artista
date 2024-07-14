@@ -7,7 +7,7 @@ export type Props = {
 export type Obra = {
     title: string
     year: string
-    descripttion: string
+    description: string
 }
 
 export type Section = {

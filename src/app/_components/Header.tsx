@@ -40,7 +40,7 @@ export default function Header() {
                         flex-auto 
                         mx-1">
                             <Link href={route} 
-                            className={`${pathname.includes(route) ? 
+                            className={`${isActive ? 
                                 'font-bold text-gray-600 hover:text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
                             >{label}</Link>
                         </li>
