@@ -1,13 +1,12 @@
-import Button from "../_components/Button"
-
 import { Metadata } from "next"
+import Button from "../_components/Button"
 
 export const metadata: Metadata = {
     title: "archivo",
     description: "archivo de sbector"
 }
 
-export default function Archivo() {
+export default function archivo() {
     return (
         <div>
             <h1>archivo</h1>
