@@ -8,6 +8,7 @@ export type Obra = {
     title: string
     year: string
     description: string
+    slug: string
 }
 
 export type Section = {
