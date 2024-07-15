@@ -5,6 +5,14 @@ import { usePathname } from "next/navigation"
 import { Props } from "../../../types"
 import Button from "@/app/_components/Button"
 
+export async function generateStaticParams() {
+    const obra = await fetch('https://.../obra').then((res) => res.json())
+   
+    return obra.map((obra:any) => ({
+      slug: obra.slug,
+    }))
+  }
+
 export default function Obra({ params, }: Props) {
     const pathname = usePathname()
     const obra = {
