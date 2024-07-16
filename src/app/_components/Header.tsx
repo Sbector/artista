@@ -9,29 +9,29 @@ export default function Header() {
     return (
         <header className="
         sticky
-        flex
-        flex-row
         top-0 
         z-50 
         w-screen 
-        h-[35px] 
+          h-[100px] 
         bg-black 
-        ">
+        text-center">
             <div className="
-            py-1 px-2">
+            py-3">
                 <Link href="/" className=" 
                 text-gray-200 
-                text-lg">sbector |</Link>
+                text-3xl">sbector</Link>
             </div>
             <nav className="
-            relative
-            text-center">
+            relative 
+            mx-4">
                 <ul className="
-                text-sm
                 flex 
-                flex-wrap
+                flex-wrap 
+                bg-gray-200 
+                rounded-lg 
+                max-w-md 
                 mx-auto 
-                py-2 px-4">
+                px-4">
                     {Sections.map(({ label, route }) => {
                         const isActive = pathname.startsWith(route)
                         return (
@@ -41,7 +41,7 @@ export default function Header() {
                         mx-1">
                             <Link href={route} 
                             className={`${isActive ? 
-                                'font-bold text-gray-100 hover:text-gray-400' : 'text-gray-200 hover:text-gray-400'}`}
+                                'font-bold text-gray-600 hover:text-gray-900' : 'text-gray-500 hover:text-gray-900'}`}
                             >{label}</Link>
                         </li>
                     )})}
