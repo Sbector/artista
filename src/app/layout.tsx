@@ -3,6 +3,7 @@ import { Roboto_Mono } from 'next/font/google'
 import Header from './_components/Header'
 import Footer from './_components/Footer'
 import { Metadata } from 'next'
+import Wrapper from './_components/Wrapper'
 
 const roboto = Roboto_Mono({
   subsets: ['latin'],
@@ -30,9 +31,11 @@ export default function RootLayout({
     text-gray-50 
     ${roboto.className}`}>
       <body>
-        <Header/>
-        {children}
-        <Footer/>
+        <Header />
+        <Wrapper>
+          {children}
+        </Wrapper>
+        <Footer />
       </body>
     </html>
   )

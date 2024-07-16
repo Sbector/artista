@@ -3,7 +3,9 @@ export default function Footer() {
         <footer className="
         w-screen 
         bg-black 
-        text-center">
+        text-center
+        h-[25px]
+        ">
             <p>Footer</p>
         </footer>
     )
