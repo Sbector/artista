@@ -10,16 +10,23 @@ export const metadata: Metadata = {
 
 export default function Obra() {
     return (
-        <div>
-            <Button href="/archivo">archivo</Button>
-            <h1 className="text-xl text-center pb-8">obras Sbector</h1>
-            <ul>
+        <>
+            <div>
+                <h1 className="text-xl text-center pb-8">obras Sbector</h1>
+                <ul>
                     {Obras.map(({ title, year, slug }) => (
                         <li key={slug} className="py-2">
                             <Link href={`obra/${slug}`}>{title},{year}</Link>
                         </li>
                     ))}
                 </ul>
-        </div>
+
+            </div>
+            <div className="
+            absolute bottom-20
+            ">
+                <Button href="/archivo">archivo</Button>
+            </div>
+        </>
     )
 }

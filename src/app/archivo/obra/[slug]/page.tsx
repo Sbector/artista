@@ -4,7 +4,7 @@ import { Obras } from "@/app/constants"
 export async function generateStaticParams() {
     const obras = await Obras
 
-    return obras.map((obra)=>({
+    return obras.map((obra) => ({
         slug: obra.slug,
     }))
 }
@@ -25,11 +25,21 @@ export default function ObraPage(props: any) {
         }
     })
     return (
-        <>
-            <Button href="/archivo/obra">obra</Button>
+        <div>
+            
             <h1>{obra.title}, {obra.year}</h1>
             <div className="h-[200px] w-[200px] bg-black"></div>
-            <p>{obra.description}</p>
-        </>
+            <div className="
+            max-h-52 
+            overflow-scroll
+            no-scrollbar
+            my-2">
+                <p className="
+                text-sm
+                
+                ">{obra.description}</p>
+            </div>
+            <Button href="/archivo/obra">obra</Button>
+        </div>
     )
 }

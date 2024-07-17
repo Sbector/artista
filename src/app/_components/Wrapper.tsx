@@ -7,7 +7,7 @@ export default function Wrapper({
 }) {
     return (
         <div className={`flex flex-col justify-center
-        min-h-[calc(100vh-125px)] max-w-full
+        min-h-[calc(100vh-105px)] max-w-full
         px-10 snap-start
         md:w-[700px] md:mx-auto
         lg:w-[820px]

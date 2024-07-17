@@ -12,14 +12,14 @@ export default function Header() {
         top-0 
         z-50 
         w-screen 
-          h-[100px] 
+        h-[80px] 
         bg-black 
         text-center">
             <div className="
-            py-3">
+            py-2">
                 <Link href="/" className=" 
                 text-gray-200 
-                text-3xl">sbector</Link>
+                text-2xl">sbector</Link>
             </div>
             <nav className="
             relative 
