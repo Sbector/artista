@@ -10,8 +10,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div>
-            <h1 className="text-xl text-center pb-8">sbector</h1>
-            <p>Este es un sitio para reunir las obras realizadas o apadrinadas por Saúl Becerra Torres</p>
+            <p>Este es un sitio para reunir las obras realizadas o apadrinadas por sbector.</p>
         </div>
     )
 }

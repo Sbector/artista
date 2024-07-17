@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function archivo() {
     return (
         <div>
-            <h1 className="text-xl text-center pb-8">archivo</h1>
+
             <div className="text-center">
                 <Button href="/archivo/obra">obra</Button>
                 <Button href="/archivo/proyectos">proyectos</Button>
