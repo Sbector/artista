@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Wrapper from "../_components/Wrapper"
 
 export const metadata: Metadata = {
     title: {
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div>
-            <p>Este es un sitio para reunir las obras realizadas o apadrinadas por sbector.</p>
+            <Wrapper>
+                <p>Este es un sitio para reunir las obras realizadas o apadrinadas por sbector.</p>
+            </Wrapper>
         </div>
     )
 }

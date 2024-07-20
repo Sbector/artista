@@ -32,9 +32,7 @@ export default function RootLayout({
     ${roboto.className}`}>
       <body>
         <Header />
-        <Wrapper>
           {children}
-        </Wrapper>
         <Footer />
       </body>
     </html>
