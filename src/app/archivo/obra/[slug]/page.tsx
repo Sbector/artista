@@ -39,7 +39,7 @@ export default function ObraPage(props: any) {
         <div>
             <Wrapper>
                 <Image
-                    className="py-7"
+                    className="my-7 mx-auto shadow-md shadow-neutral-800"
                     src={obra.imgsrc}
                     alt={obra.imgalt}
                     width={150}
