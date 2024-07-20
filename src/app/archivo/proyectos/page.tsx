@@ -10,9 +10,14 @@ export default function ProyectosPage() {
     return (
         <div>
             <Wrapper>
-                {Proyectos.map(({ title, year, imgsrc, imgalt, description }) => (
-                    <Card title={title} year={year} imgsrc={imgsrc} imgalt={imgalt} description={description}></Card>
-                ))}
+                <ul>
+                    {Proyectos.map(({ title, year, imgsrc, imgalt, description }) => (
+                        <li key={title}>
+                            <Card title={title} year={year} imgsrc={imgsrc} imgalt={imgalt} description={description}></Card>
+                        </li>
+                    ))}
+                </ul>
+
             </Wrapper>
         </div>
     )
