@@ -11,7 +11,7 @@ export default function archivo() {
     return (
         <div>
             <Wrapper>
-                <div className="text-center">
+                <div className="flex">
                     <Button href="/archivo/obra">obra</Button>
                     <Button href="/archivo/proyectos">proyectos</Button>
                 </div>

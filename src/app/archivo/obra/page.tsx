@@ -19,18 +19,16 @@ export default function ObrasPage() {
                         {Obras.map(({ title, year, slug }) => (
                             <li key={slug} className="py-2 text-sm">
                                 <Link href={`obra/${slug}`}>
-                                <span>{title},{year}</span>
+                                    <span>{title},{year}</span>
                                 </Link>
                             </li>
                         ))}
                     </ul>
 
                 </div>
-                <div className="
-            absolute bottom-20
-            ">
-                    <Button href="/archivo">archivo</Button>
-                </div>
+
+                <Button href="/archivo">archivo</Button>
+
             </Wrapper>
         </div>
     )
