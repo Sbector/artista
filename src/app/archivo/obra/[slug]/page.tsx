@@ -46,7 +46,7 @@ export default function ObraPage(props: any) {
                     height={100}
                     priority
                 />
-                <h1 className="font-medium py-2 text-lg">
+                <h1 className="font-medium py-2 text-lg border-b">
                     {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                 </h1>
                 <div className="
@@ -60,7 +60,7 @@ export default function ObraPage(props: any) {
                         {obra.description}
                     </p>
                 </div>
-                <Button href="/archivo/obra">obra</Button>
+                <Button className="absolute bottom-12" href="/archivo/obra">obra</Button>
             </Wrapper>
         </div>
     )

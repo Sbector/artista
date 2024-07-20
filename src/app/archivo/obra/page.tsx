@@ -17,7 +17,7 @@ export default function ObrasPage() {
                     <h1 className="text-xl text-center pb-8">obras Sbector</h1>
                     <ul>
                         {Obras.map(({ title, year, slug }) => (
-                            <li key={slug} className="py-2 text-sm">
+                            <li key={slug} className="py-2 text-sm border-b">
                                 <Link href={`obra/${slug}`}>
                                     <span>{title},{year}</span>
                                 </Link>
@@ -27,7 +27,7 @@ export default function ObrasPage() {
 
                 </div>
 
-                <Button href="/archivo">archivo</Button>
+                <Button className="absolute bottom-12" href="/archivo">archivo</Button>
 
             </Wrapper>
         </div>
