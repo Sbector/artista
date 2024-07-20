@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`
-    bg-stone-600 
+    bg-neutral-600 
     text-gray-50 
     ${roboto.className}`}>
       <body>

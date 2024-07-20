@@ -33,23 +33,27 @@ export default function ObraPage(props: any) {
     return (
         <div>
             <Wrapper>
-                <h1>{obra.title}, {obra.year}</h1>
                 <Image
+                    className="py-2"
                     src={obra.imgsrc}
                     alt={obra.imgalt}
-                    width={200}
+                    width={150}
                     height={100}
                     priority
                 />
+                <h1 className="font-medium text-lg">
+                    {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
+                </h1>
                 <div className="
-            max-h-52 
-            overflow-scroll
-            no-scrollbar
-            my-2">
+                    max-h-52 
+                    overflow-scroll
+                    no-scrollbar
+                    my-2">
                     <p className="
-                text-sm
-                
-                ">{obra.description}</p>
+                        text-sm
+                    ">
+                        {obra.description}
+                    </p>
                 </div>
                 <Button href="/archivo/obra">obra</Button>
             </Wrapper>

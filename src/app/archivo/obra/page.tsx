@@ -17,7 +17,7 @@ export default function ObrasPage() {
                     <h1 className="text-xl text-center pb-8">obras Sbector</h1>
                     <ul>
                         {Obras.map(({ title, year, slug }) => (
-                            <li key={slug} className="py-2">
+                            <li key={slug} className="py-2 text-sm">
                                 <Link href={`obra/${slug}`}>
                                 <span>{title},{year}</span>
                                 </Link>

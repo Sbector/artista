@@ -13,7 +13,11 @@ export default function ProyectosPage() {
                 <ul>
                     {Proyectos.map(({ title, year, imgsrc, imgalt, description }) => (
                         <li key={title}>
-                            <Card title={title} year={year} imgsrc={imgsrc} imgalt={imgalt} description={description}></Card>
+                            <Card title={title} 
+                            year={year} 
+                            imgsrc={imgsrc} 
+                            imgalt={imgalt} 
+                            description={description}></Card>
                         </li>
                     ))}
                 </ul>
