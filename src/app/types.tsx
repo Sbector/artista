@@ -13,6 +13,15 @@ export type Obra = {
     imgalt?: string
 }
 
+export type Proyecto = {
+    title: string
+    year: string
+    description: string
+    slug?: string
+    imgsrc?: string
+    imgalt?: string
+}
+
 export type Section = {
         label: string
         route: string

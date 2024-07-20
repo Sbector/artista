@@ -1,5 +1,6 @@
 import { Obra } from "./types"
 import { Section } from "./types"
+import { Proyecto } from "./types"
 
 
 export const Obras: Obra [] = [
@@ -62,4 +63,15 @@ export const Sections: Section [] = [
         label: 'contacto',
         route: '/contacto'
     },
+]
+
+export const Proyectos: Proyecto [] = [
+    {
+        title: "shuniata",
+        year: "2012",
+        description: "Instalación virtual in situ que reflexiona sobre la idea de información y el acceso a la misma.",
+        slug: "shuniata",
+        imgsrc: "../obras/shuniata.gif",
+        imgalt: "fotografía de la instalación virutal shuniata"
+    }
 ]
