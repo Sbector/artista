@@ -1,13 +1,18 @@
 import Card from "@/app/_components/Card";
 import Wrapper from "@/app/_components/Wrapper";
-const localUrl  = "/obras/shuniata.gif"
-const ghpagesUrl  = "/obras/shuniata.gif"
 
-export default function Proyectos() {
+import { Proyectos } from "@/app/constants";
+
+export default function ProyectosPage() {
+
+
+
     return (
         <div>
             <Wrapper>
-                <Card title="Example" year="XXX" imgsrc="../obras/shuniata.gif" imgalt="" description="Descripción de prueba"></Card>
+                {Proyectos.map(({ title, year, imgsrc, imgalt, description }) => (
+                    <Card title={title} year={year} imgsrc={imgsrc} imgalt={imgalt} description={description}></Card>
+                ))}
             </Wrapper>
         </div>
     )

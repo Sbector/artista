@@ -7,8 +7,8 @@ export default function Card( {title, year, imgsrc, imgalt}: Obra ) {
             <Image
             src={imgsrc? imgsrc : ""}
             alt={imgalt? imgalt : ""}
-            width={400}
-            height={400}
+            width={200}
+            height={100}
             priority
             />
             <span>{title}, {year}</span>
