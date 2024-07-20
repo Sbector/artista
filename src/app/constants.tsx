@@ -9,7 +9,7 @@ export const Obras: Obra [] = [
         year: "2024",
         description: "Representación virtual online de una roca volcánica proveniente del volcán Parícutin.",
         slug: "chalchiutlicue",
-        imgsrc: "/obras/chalchiuhtlicue.jpg",
+        imgsrc: "../obras/chalchiuhtlicue.jpg",
         imgalt: "Imagen de la diosa azteca de la lluvia"
     },
     {
