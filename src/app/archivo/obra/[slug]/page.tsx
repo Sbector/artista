@@ -1,4 +1,5 @@
 import Button from "@/app/_components/Button"
+import Wrapper from "@/app/_components/Wrapper"
 import { Obras } from "@/app/constants"
 
 export async function generateStaticParams() {
@@ -26,20 +27,21 @@ export default function ObraPage(props: any) {
     })
     return (
         <div>
-            
-            <h1>{obra.title}, {obra.year}</h1>
-            <div className="h-[200px] w-[200px] bg-black"></div>
-            <div className="
+            <Wrapper>
+                <h1>{obra.title}, {obra.year}</h1>
+                <div className="h-[200px] w-[200px] bg-black"></div>
+                <div className="
             max-h-52 
             overflow-scroll
             no-scrollbar
             my-2">
-                <p className="
+                    <p className="
                 text-sm
                 
                 ">{obra.description}</p>
-            </div>
-            <Button href="/archivo/obra">obra</Button>
+                </div>
+                <Button href="/archivo/obra">obra</Button>
+            </Wrapper>
         </div>
     )
 }
