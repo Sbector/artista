@@ -11,6 +11,7 @@ export type Obra = {
     slug?: string
     imgsrc: string
     imgalt: string
+    iframesrc: string
 }
 
 export type Proyecto = {

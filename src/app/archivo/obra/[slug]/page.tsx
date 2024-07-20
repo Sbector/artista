@@ -20,28 +20,33 @@ export default function ObraPage(props: any) {
         slug: "",
         imgsrc: "",
         imgalt: "",
+        iframesrc: ""
     }
-    Obras.map(({ title, year, description, slug, imgsrc, imgalt }) => {
+    const haveiframe = false
+
+    Obras.map(({ title, year, description, slug, imgsrc, imgalt, iframesrc }) => {
         if (props.params.slug.includes(slug)) {
             obra.title = title
             obra.year = year
             obra.description = description
             obra.imgsrc = imgsrc
             obra.imgalt = imgalt
+            obra.iframesrc = iframesrc
         }
     })
     return (
+
         <div>
             <Wrapper>
                 <Image
-                    className="py-2"
+                    className="py-7"
                     src={obra.imgsrc}
                     alt={obra.imgalt}
                     width={150}
                     height={100}
                     priority
                 />
-                <h1 className="font-medium text-lg">
+                <h1 className="font-medium py-2 text-lg">
                     {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                 </h1>
                 <div className="
