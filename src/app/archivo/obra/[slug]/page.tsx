@@ -1,5 +1,6 @@
 import Button from "@/app/_components/Button"
 import Wrapper from "@/app/_components/Wrapper"
+import Image from "next/image"
 import { Obras } from "@/app/constants"
 
 export async function generateStaticParams() {
@@ -17,19 +18,29 @@ export default function ObraPage(props: any) {
         year: "",
         description: "",
         slug: "",
+        imgsrc: "",
+        imgalt: "",
     }
-    Obras.map(({ title, year, description, slug }) => {
+    Obras.map(({ title, year, description, slug, imgsrc, imgalt }) => {
         if (props.params.slug.includes(slug)) {
             obra.title = title
             obra.year = year
             obra.description = description
+            obra.imgsrc = imgsrc
+            obra.imgalt = imgalt
         }
     })
     return (
         <div>
             <Wrapper>
                 <h1>{obra.title}, {obra.year}</h1>
-                <div className="h-[200px] w-[200px] bg-black"></div>
+                <Image
+                    src={obra.imgsrc}
+                    alt={obra.imgalt}
+                    width={200}
+                    height={100}
+                    priority
+                />
                 <div className="
             max-h-52 
             overflow-scroll

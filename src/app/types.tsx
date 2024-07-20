@@ -9,8 +9,8 @@ export type Obra = {
     year: string
     description: string
     slug?: string
-    imgsrc?: string
-    imgalt?: string
+    imgsrc: string
+    imgalt: string
 }
 
 export type Proyecto = {

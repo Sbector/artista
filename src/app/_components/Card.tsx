@@ -1,7 +1,7 @@
 import Image from "next/image"
-import { Obra } from "../types"
+import { Proyecto } from "../types"
 
-export default function Card( {title, year, imgsrc, imgalt}: Obra ) {
+export default function Card( {title, year, imgsrc, imgalt}: Proyecto ) {
     return (
         <div>
             <Image

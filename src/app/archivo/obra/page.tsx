@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: "obras de sbector"
 }
 
-export default function Obra() {
+export default function ObrasPage() {
     return (
         <div id="obras">
             <Wrapper>
