@@ -7,7 +7,7 @@ export default function Proyectos() {
     return (
         <div>
             <Wrapper>
-                <Card title="Example" year="XXX" imgsrc="/public/obras/shuniata.gif" imgalt="" description="Descripción de prueba"></Card>
+                <Card title="Example" year="XXX" imgsrc="../obras/shuniata.gif" imgalt="" description="Descripción de prueba"></Card>
             </Wrapper>
         </div>
     )
