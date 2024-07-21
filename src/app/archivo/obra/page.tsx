@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 export default function ObrasPage() {
     return (
         <div id="obras">
-            <Wrapper className="">
+            <Wrapper >
                 <h1 className="text-xl">obras</h1>
-                <div>
+                <div className="relative">
                     <ul className="
                         max-h-[calc(100vh-230px)]
                     overflow-scroll
@@ -28,8 +28,9 @@ export default function ObrasPage() {
                             </li>
                         ))}
                     </ul>
+                    <Button className="absolute left-0 bottom-[-30px]" href="/archivo">archivo</Button>
                 </div>
-                <Button className="absolute bottom-[40px]" href="/archivo">archivo</Button>
+                
             </Wrapper>
 
         </div>

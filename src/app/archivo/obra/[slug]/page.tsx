@@ -37,12 +37,14 @@ export default function ObraPage(props: any) {
     return (
 
         <div>
-            <Wrapper className="justify-around sm:flex-row-reverse sm:justify-between">
-                <div className="min-h-[calc(100vh/3)] sm:h-[calc(100vh/2)] flex">
+            <Wrapper className="sm:flex-row-reverse sm:justify-between">
+                <div className="h-[calc(100vh*0.5)] sm:h-[calc(100vh-145px)] pl-4">
                     <Image
                         className="
                         object-cover
-                        mx-auto 
+                        mx-auto
+                        w-full
+                        h-full 
                         shadow-md shadow-neutral-800"
                         src={obra.imgsrc}
                         alt={obra.imgalt}
@@ -51,14 +53,15 @@ export default function ObraPage(props: any) {
                         priority
                     />
                 </div>
-                <div className="max-h-[calc(100vh/3)] sm:min-h-[calc(100vh/2)] sm:w-1/2 relative">
+                <div className="max-h-[calc(100vh/3)] sm:min-h-[calc(100vh-175px)] sm:w-[calc(100vw*0.4)] relative">
 
                     <h1 className="font-medium py-2 text-lg border-b">
                         {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                     </h1>
 
                     <p className="
-                    h-[100px] 
+                    h-[calc(100vh*.12)]
+                    sm:h-[calc(100vh*.33)] 
                     overflow-scroll
                     no-scrollbar
                     my-2
