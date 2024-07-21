@@ -13,9 +13,13 @@ export default function ObrasPage() {
     return (
         <div id="obras">
             <Wrapper>
+                <h1 className="text-xl">obras</h1>
                 <div>
-                    <h1 className="text-xl text-center pb-8">obras Sbector</h1>
-                    <ul>
+                    <ul className="
+                        max-h-[calc(100vh-230px)]
+                    overflow-scroll
+                    no-scrollbar
+                    my-2">
                         {Obras.map(({ title, year, slug }) => (
                             <li key={slug} className="py-2 text-sm border-b">
                                 <Link href={`obra/${slug}`}>
@@ -24,12 +28,10 @@ export default function ObrasPage() {
                             </li>
                         ))}
                     </ul>
-
                 </div>
-
-                <Button className="absolute bottom-12" href="/archivo">archivo</Button>
-
+                <Button className="absolute bottom-[40px]" href="/archivo">archivo</Button>
             </Wrapper>
+
         </div>
     )
 }

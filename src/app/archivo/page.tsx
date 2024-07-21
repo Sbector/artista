@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function archivo() {
     return (
         <div>
-            <Wrapper>
-                <div className="flex">
+            <Wrapper className="justify-center">
+                <div className="flex justify-around">
                     <Button href="/archivo/obra">obra</Button>
                     <Button href="/archivo/proyectos">proyectos</Button>
                 </div>

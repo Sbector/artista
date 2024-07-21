@@ -20,7 +20,7 @@ export default function Button({
             text-gray-500
             shadow-gray-500 
             hover:bg-gray-300 active:shadow-sm shadow-md transition-all 
-            rounded-lg mx-auto px-2
+            rounded-lg px-2 mx-2
         `}>
             <button>
                 {children}

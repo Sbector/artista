@@ -12,26 +12,23 @@ export default function Nav() {
             mx-4
             py-1">
                 <div className="
-            pt-1">
+            py-1">
                     <Link href="/" className="
                 font-light
                 text-gray-200 
                 text-2xl">sbector</Link>
                 </div>
                 <ul className="
-                flex 
-                flex-wrap 
+                flex
+                justify-around
                 bg-gray-200 
-                rounded-lg 
-                max-w-md 
-                mx-auto 
+                rounded-lg   
                 px-4">
                     {Sections.map(({ label, route }) => {
                         const isActive = pathname.startsWith(route)
                         return (
                             <li key={route}
                                 className="
-                        flex-auto 
                         mx-1">
                                 <Link href={route}
                                     className={`${isActive ?
