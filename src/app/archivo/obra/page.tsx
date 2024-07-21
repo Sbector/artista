@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ObrasPage() {
     return (
         <div id="obras">
-            <Wrapper>
+            <Wrapper className="">
                 <h1 className="text-xl">obras</h1>
                 <div>
                     <ul className="
