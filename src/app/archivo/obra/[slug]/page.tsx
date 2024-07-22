@@ -38,7 +38,7 @@ export default function ObraPage(props: any) {
 
         <div>
             <Wrapper className="relative grid grid-rows-2 landscape:flex landscape:flex-row-reverse">
-                <div className="landscape:min-w-[50%] landscape:pl-2">
+                <div className="landscape:min-w-[50%] landscape:max-w-[50%] landscape:pl-2">
                     <Image
                         className="
                         object-cover

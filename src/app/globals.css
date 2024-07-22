@@ -9,8 +9,12 @@
     box-sizing: border-box;
  }
 
-html {
+html,
+body,
+#root {
     scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
 }
 @media (prefers-reduced-motion: reduce) {
     html {
