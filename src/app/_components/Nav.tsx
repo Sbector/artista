@@ -8,7 +8,6 @@ export default function Nav() {
 
     return (
         <nav className="
-            relative 
             mx-4
             py-1">
                 <div className="

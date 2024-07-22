@@ -30,6 +30,7 @@ export default function RootLayout({
     bg-neutral-600 
     text-gray-50 
     ${roboto.className}`}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <body>
         <Header />
           {children}
