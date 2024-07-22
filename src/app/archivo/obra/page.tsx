@@ -16,7 +16,8 @@ export default function ObrasPage() {
                 <h1 className="text-xl">obras</h1>
                 <div className="relative">
                     <ul className="
-                        max-h-[calc(100vh-230px)]
+                    max-h-[calc(100vh-230px)]
+                    sm:h-[calc(100vh*0.4)]
                     overflow-scroll
                     no-scrollbar
                     my-2">

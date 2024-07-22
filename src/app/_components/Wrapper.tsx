@@ -8,7 +8,7 @@ export default function Wrapper({
     return (
         <div className={`${className}
         flex flex-col
-        min-h-[calc(100vh-97px)]
+        h-[calc(100vh-97px)]
         py-6
         px-10 snap-start
         md:w-[700px] md:mx-auto

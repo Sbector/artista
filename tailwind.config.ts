@@ -8,12 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+      screens: {
+        'tall': {
+          'raw': `only screen and (max-height: 960px) and (max-width: 480px)`
+        },
+        'wide': {
+          'raw': `only screen and (max-height: 480px) and (max-width: 960px)`
+        },
+        'portrait': {
+          'raw': '(orientation: portrait)'
+        },
+        'landscape': {
+          'raw': '(orientation: landscape)'
+        },
+        'tallOrWideAndPortrait': {
+          'raw': `only screen and ((max-height: 960px) and (max-width: 480px) or (max-height: 480px) and (max-width: 960px)) and (orientation: portrait)`
+        },
+        'tallOrWideAndLandscape': {
+          'raw': `only screen and ((max-height: 960px) and (max-width: 480px) or (max-height: 480px) and (max-width: 960px)) and (orientation: landscape)`
+        },
+}}
   },
   plugins: [
     function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {

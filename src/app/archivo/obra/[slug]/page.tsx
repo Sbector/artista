@@ -37,8 +37,8 @@ export default function ObraPage(props: any) {
     return (
 
         <div>
-            <Wrapper className="sm:flex-row-reverse sm:justify-between">
-                <div className="h-[calc(100vh*0.5)] sm:h-[calc(100vh-145px)] pl-4">
+            <Wrapper className="relative grid grid-rows-2 landscape:flex landscape:flex-row-reverse">
+                <div className="landscape:min-w-[50%] landscape:pl-2">
                     <Image
                         className="
                         object-cover
@@ -53,25 +53,25 @@ export default function ObraPage(props: any) {
                         priority
                     />
                 </div>
-                <div className="max-h-[calc(100vh/3)] sm:min-h-[calc(100vh-175px)] sm:w-[calc(100vw*0.4)] relative">
+                <div className="pr-2">
 
-                    <h1 className="font-medium py-2 text-lg border-b">
+                    <h1 className="font-medium pt-2 text-lg">
                         {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                     </h1>
 
                     <p className="
-                    h-[calc(100vh*.12)]
-                    sm:h-[calc(100vh*.33)] 
+                    max-h-[65%] landscape:max-h-[70%]
                     overflow-scroll
                     no-scrollbar
                     my-2
-                        text-sm
+                    
+                    text-sm
                     ">
                         {obra.description}
                     </p>
-                    <Button className="absolute left-0 bottom-[-30px]" href="/archivo/obra">obra</Button>
+                    
                 </div>
-
+                <Button className="absolute left-8 bottom-4" href="/archivo/obra">obra</Button>
             </Wrapper>
 
         </div>
