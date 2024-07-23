@@ -7,7 +7,8 @@ export default function Header() {
         sticky
         top-0 
         z-50 
-        w-screen 
+        w-screen
+        md:w-[700px] md:mx-auto
         text-center">
             <Nav/>
         </header>

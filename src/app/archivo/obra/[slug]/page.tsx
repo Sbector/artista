@@ -37,15 +37,21 @@ export default function ObraPage(props: any) {
     return (
 
         <div>
-            <Wrapper className="relative grid grid-rows-2 landscape:flex landscape:flex-row-reverse">
-                <div className="landscape:min-w-[50%] landscape:max-w-[50%] landscape:pl-2">
+            <Wrapper className="relative  
+            grid grid-rows-7 gap-2
+            landscape:grid-cols-5 landscape:grid-rows-1">
+                <div className="
+                row-span-5 
+                landscape:col-span-3 landscape:pr-4
+                ">
                     <Image
                         className="
                         object-cover
                         mx-auto
                         w-full
                         h-full 
-                        shadow-md shadow-neutral-800"
+                        shadow-md shadow-neutral-800
+                        "
                         src={obra.imgsrc}
                         alt={obra.imgalt}
                         width={150}
@@ -53,25 +59,26 @@ export default function ObraPage(props: any) {
                         priority
                     />
                 </div>
-                <div className="pr-2">
-
-                    <h1 className="font-medium pt-2 text-lg">
+                <div className="
+                flex flex-col landscape:justify-end
+                row-span-2 
+                landscape:col-span-2">
+                    <h1 className="font-medium text-lg">
                         {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                     </h1>
 
                     <p className="
-                    max-h-[65%] landscape:max-h-[70%]
+                    max-h-[50%] landscape:max-h-[75%]
                     overflow-scroll
                     no-scrollbar
                     my-2
-                    
                     text-sm
                     ">
                         {obra.description}
                     </p>
                     
                 </div>
-                <Button className="absolute left-8 bottom-4" href="/archivo/obra">obra</Button>
+                <Button className="absolute right-8 bottom-4" href="/archivo/obra">obra</Button>
             </Wrapper>
 
         </div>

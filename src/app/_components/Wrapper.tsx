@@ -10,13 +10,12 @@ export default function Wrapper({
         flex flex-col
         justify-center
         h-screen
-        mt-[-97px]
-        pt-[110px]
+        mt-[-75px]
+        pt-[85px]
         pb-[15px]
         px-10 snap-start
-        md:w-[700px] md:mx-auto
-        lg:w-[820px]
-        xl:w-[1024px]
+        landscape:pt-[95px]
+        landscape:pb-[25px]
         `}>
             {children}
         </div>
