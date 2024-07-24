@@ -8,7 +8,7 @@ export type Obra = {
     title: string
     year: string
     description: string
-    slug?: string
+    slug: string
     imgsrc: string
     imgalt: string
     iframesrc: string

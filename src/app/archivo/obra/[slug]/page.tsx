@@ -29,6 +29,7 @@ export default function ObraPage(props: any) {
             obra.title = title
             obra.year = year
             obra.description = description
+            obra.slug = slug
             obra.imgsrc = imgsrc
             obra.imgalt = imgalt
             obra.iframesrc = iframesrc
@@ -45,12 +46,13 @@ export default function ObraPage(props: any) {
                 landscape:col-span-3 landscape:pr-4
                 ">
                     <iframe
-                        id="inlineFrameExample"
-                        title="Inline Frame Example"
-                        width="300"
-                        height="400"
-                        src="https://sbector.com/paricutin/">
-                    </iframe>
+                        id={obra.slug}
+                        title={obra.title}
+                        src={obra.iframesrc}
+                        className="top-0 left-0 w-full h-full"
+                        frameBorder="0"
+                        allowFullScreen
+                    ></iframe>
                 </div>
                 <div className="
                 flex flex-col landscape:justify-end
