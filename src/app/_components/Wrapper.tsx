@@ -13,7 +13,7 @@ export default function Wrapper({
         mt-[-75px]
         pt-[85px]
         pb-[15px]
-        px-10 snap-start
+        px-0 snap-start
         landscape:pt-[95px]
         landscape:pb-[25px]
         `}>
