@@ -1,5 +1,5 @@
 import Card from "@/app/_components/Card";
-import Wrapper from "@/app/_components/Wrapper";
+import TextWrapper from "@/app/_components/TextWrapper";
 
 import { Proyectos } from "@/app/constants";
 
@@ -9,7 +9,7 @@ export default function ProyectosPage() {
 
     return (
         <div>
-            <Wrapper>
+            <TextWrapper>
                 <ul>
                     {Proyectos.map(({ title, year, imgsrc, imgalt, description }) => (
                         <li key={title}>
@@ -22,7 +22,7 @@ export default function ProyectosPage() {
                     ))}
                 </ul>
 
-            </Wrapper>
+            </TextWrapper>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import Button from "@/app/_components/Button"
 import Link from "next/link"
 import { Obras } from "@/app/constants"
 import { Metadata } from "next"
-import Wrapper from "@/app/_components/Wrapper"
+import TextWrapper from "@/app/_components/TextWrapper"
 
 export const metadata: Metadata = {
     title: "obras",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ObrasPage() {
     return (
         <div id="obras">
-            <Wrapper >
+            <TextWrapper >
                 <h1 className="text-xl">obras</h1>
                 <div className="relative">
                     <ul className="
@@ -32,7 +32,7 @@ export default function ObrasPage() {
                     <Button className="absolute right-0 bottom-[-30px]" href="/archivo">archivo</Button>
                 </div>
                 
-            </Wrapper>
+            </TextWrapper>
 
         </div>
     )

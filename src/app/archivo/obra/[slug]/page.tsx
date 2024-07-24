@@ -51,6 +51,7 @@ export default function ObraPage(props: any) {
                         title={obra.title}
                         src={obra.iframesrc}
                         className="top-0 left-0 w-full h-full"
+                        allowFullScreen
                     ></iframe>
                 </div>
                 <div className="

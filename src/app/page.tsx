@@ -1,13 +1,13 @@
 import Button from "./_components/Button"
-import Wrapper from "./_components/Wrapper"
+import TextWrapper from "./_components/TextWrapper"
 
 export default function Home() {
     return (
         <div>
-            <Wrapper>
+            <TextWrapper>
                 <h1>Bienvenide!</h1>
                 <p>Este es el sitio de artista de sbector</p>
-            </Wrapper>
+            </TextWrapper>
         </div>
     )
 }

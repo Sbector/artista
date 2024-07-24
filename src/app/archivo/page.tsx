@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Button from "../_components/Button"
-import Wrapper from "../_components/Wrapper"
+import TextWrapper from "../_components/TextWrapper"
 
 export const metadata: Metadata = {
     title: "archivo",
@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 export default function archivo() {
     return (
         <div>
-            <Wrapper className="justify-center">
+            <TextWrapper className="grid grid-cols-2">
                 <div className="flex justify-around">
                     <Button href="/archivo/obra">obra</Button>
                     <Button href="/archivo/proyectos">proyectos</Button>
                 </div>
-            </Wrapper>
+            </TextWrapper>
         </div>
     )
 }
