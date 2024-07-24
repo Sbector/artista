@@ -44,20 +44,13 @@ export default function ObraPage(props: any) {
                 row-span-5 
                 landscape:col-span-3 landscape:pr-4
                 ">
-                    <Image
-                        className="
-                        object-cover
-                        mx-auto
-                        w-full
-                        h-full 
-                        shadow-md shadow-neutral-800
-                        "
-                        src={obra.imgsrc}
-                        alt={obra.imgalt}
-                        width={150}
-                        height={100}
-                        priority
-                    />
+                    <iframe
+                        id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="300"
+                        height="400"
+                        src="https://sbector.com/paricutin/">
+                    </iframe>
                 </div>
                 <div className="
                 flex flex-col landscape:justify-end
@@ -76,7 +69,7 @@ export default function ObraPage(props: any) {
                     ">
                         {obra.description}
                     </p>
-                    
+
                 </div>
                 <Button className="absolute right-8 bottom-4" href="/archivo/obra">obra</Button>
             </Wrapper>
