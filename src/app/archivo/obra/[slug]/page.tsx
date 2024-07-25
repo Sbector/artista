@@ -59,7 +59,8 @@ export default function ObraPage(props: any) {
                 flex flex-col landscape:justify-end
                 row-span-3 
                 landscape:col-span-3 landscape:pr-3">
-                    <h1 className="font-medium text-lg">
+                    <h1 className="font-medium 
+                    text-xl xl:text-3xl">
                         {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
                     </h1>
 
@@ -68,7 +69,6 @@ export default function ObraPage(props: any) {
                     overflow-scroll
                     no-scrollbar
                     my-2
-                    text-sm
                     ">
                         {obra.description}
                     </p>

@@ -13,7 +13,7 @@ export default function ObrasPage() {
     return (
         <div id="obras">
             <TextWrapper >
-                <h1 className="text-xl">obras</h1>
+                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">obras</h1>
                 <div className="relative">
                     <ul className="
                     max-h-[calc(100vh-230px)]
@@ -22,7 +22,7 @@ export default function ObrasPage() {
                     no-scrollbar
                     my-2">
                         {Obras.map(({ title, year, slug }) => (
-                            <li key={slug} className="py-2 text-sm border-b">
+                            <li key={slug} className="py-2 border-b">
                                 <Link href={`obra/${slug}`}>
                                     <span>{title},{year}</span>
                                 </Link>

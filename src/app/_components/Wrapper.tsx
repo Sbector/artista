@@ -9,6 +9,7 @@ export default function Wrapper({
         <div className={`${className}
         flex flex-col
         justify-center
+        text-sm md:text-base lg:text-xl xl:texl-2xl
         h-screen
         mt-[-75px]
         pt-[85px]
