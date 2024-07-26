@@ -3,18 +3,10 @@ import { Section } from "./types"
 import { Proyecto } from "./types"
 
 
-export const Obras: Obra[] = [
+export const Obras: Obra [] = [
+   
     {
-        title: "chalchiuhtlicue",
-        year: "2024",
-        description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
-        slug: "chalchiuhtlicue",
-        imgsrc: "../../obras/paricutin.jpg",
-        imgalt: "Captura de pantalla de la experiencia virtual 3d chalchiuhtlicue",
-        iframesrc: "https://sbector.com/chalchiuhtlicue/"
-    },
-    {
-        title: "parícutin",
+        title:"parícutin",
         year: "2023",
         description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
         slug: "paricutin",
@@ -23,7 +15,7 @@ export const Obras: Obra[] = [
         iframesrc: "https://sbector.com/paricutin/"
     },
     {
-        title: "subtle-sync",
+        title:"subtle-sync",
         year: "2023",
         description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
         slug: "subtle",
@@ -31,10 +23,10 @@ export const Obras: Obra[] = [
         imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
         iframesrc: "https://sbector.com/subtle-sync/"
     },
-
+    
 ]
 
-export const Sections: Section[] = [
+export const Sections: Section [] = [
     {
         label: 'about',
         route: '/about'
@@ -50,7 +42,7 @@ export const Sections: Section[] = [
     },
 ]
 
-export const Proyectos: Proyecto[] = [
+export const Proyectos: Proyecto [] = [
     {
         title: "shuniata",
         year: "2012",
