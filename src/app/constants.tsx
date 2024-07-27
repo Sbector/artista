@@ -11,7 +11,7 @@ export const Obras: Obra[] = [
         slug: "chalchiuhtlicue",
         imgsrc: "../../obras/paricutin.jpg",
         imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
-        iframesrc: "https://drei.pmnd.rs/iframe.html?args=&id=controls-deviceorientationcontrols--device-orientation-controls-st&viewMode=story"
+        iframesrc: "https://sbector.com/chalchiuhtlicue/"
     },
     {
         title: "parícutin",
