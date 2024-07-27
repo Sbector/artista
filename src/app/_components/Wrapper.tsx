@@ -10,7 +10,7 @@ export default function Wrapper({
         flex flex-col
         justify-center
         text-sm md:text-base lg:text-xl xl:texl-2xl
-        h-screen
+        h-[100dvh]
         mt-[-75px]
         pt-[85px]
         pb-[15px]

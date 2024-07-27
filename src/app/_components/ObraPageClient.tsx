@@ -20,7 +20,7 @@ export default function ObraPageClient({ obra }: { obra: any }) {
                 isFullScreen? "flex": "grid-rows-9 landscape:grid-cols-6 landscape:grid-rows-1"
             }`}>
                 <div className={` row-span-6 transition-all ${
-                    isFullScreen? "absolute h-screen w-screen z-10": "relative landscape:col-span-3 landscape:pr-4"
+                    isFullScreen? "absolute h-[100dvh] w-screen z-10": "relative landscape:col-span-3 landscape:pr-4"
                 }`}>
                     {obra.iframesrc?(
                         <iframe
