@@ -74,7 +74,7 @@ export default function ObraPageClient({ obra }: { obra: Obra }) {
                     ) : (
                         <></>
                     )}
-                    <Button className="absolute right-8 bottom-4" href="/archivo/obra">obra</Button>
+                    <Button className="absolute right-8 bottom-4" href="/archivo/obra">volver</Button>
                 </div>
 
             </Wrapper>

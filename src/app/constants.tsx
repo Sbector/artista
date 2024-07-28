@@ -27,11 +27,12 @@ export const Obras: Obra[] = [
         year: "2023",
         description: "webapp y smartphones.",
         slug: "subtle",
-        imgsrc: "../../obras/paricutin.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual 3d subtle sync.",
+        imgsrc: "",
+        imgalt: "",
         iframesrc: "https://sbector.com/subtle-sync/",
         appLink: "https://sbector.com/subtle-sync/"
-    },{
+    },
+    {
         title: "autorretrato",
         year: "2021",
         description: "webapp.",
@@ -40,10 +41,21 @@ export const Obras: Obra[] = [
         imgalt: "captura de pantalla de la experiencia virtual autorretrato.",
         iframesrc: "",
         appLink:"https://autorretrato.glitch.me/"
-    },{
+    },
+    {
+        title: "planet",
+        year: "2020",
+        description: "video digital monocanal a color, 2:37 min",
+        slug: "planet",
+        imgsrc: "../../obras/planet.jpg",
+        imgalt: "Still de video de la obra planet",
+        iframesrc: "",
+        appLink:""
+    },
+    {
         title: "inconspicuo",
         year: "2018",
-        description: "video a color",
+        description: "video digital monocanal a color, 4:22 min",
         slug: "inconspicuo",
         imgsrc: "../../obras/inconspicuo.jpg",
         imgalt: "Still de video de la obra inconspicuo",
