@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import { Obra } from "../types";
 import Button from "@/app/_components/Button";
 import Wrapper from "@/app/_components/Wrapper";
 import Image from "next/image";
 import FullScreenIcon from "./icons/FullScreen";
 import ExitFullScreenIcon from "./icons/ExitFullScreen";
 
-export default function ObraPageClient({ obra }: { obra: any }) {
+export default function ObraPageClient({ obra }: { obra: Obra }) {
     const [isFullScreen, setIsFullScreen] = useState(false);
 
     const toggleFullScreen = () => {
@@ -17,7 +18,7 @@ export default function ObraPageClient({ obra }: { obra: any }) {
     return (
         <div>
             <Wrapper className={`relative px-0 grid gap-2 ${
-                isFullScreen? "flex": "grid-rows-9 landscape:grid-cols-6 landscape:grid-rows-1"
+                isFullScreen? "flex": "grid-rows-9 grid-cols-1 landscape:grid-cols-6 landscape:grid-rows-1"
             }`}>
                 <div className={`row-span-6 transition-all ${
                     isFullScreen? "absolute h-[100dvh] w-screen bg-black z-20": "relative landscape:col-span-3 landscape:pr-4"
