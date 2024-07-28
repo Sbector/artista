@@ -7,42 +7,33 @@ export const Obras: Obra[] = [
     {
         title: "chalchiuhtlicue",
         year: "2024",
-        description: "fotogrametría de monolito de la diosa chalchiuhtlicue extraída de san miguel coatlinchán.",
+        description: "Fotogrametría de monolito de la diosa chalchiuhtlicue extraída de San Miguel Coatlinchán.",
         slug: "chalchiuhtlicue",
-        imgsrc: "",
-        imgalt: "",
+        imgsrc: "../../obras/paricutin.jpg",
+        imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
         iframesrc: "https://sbector.com/chalchiuhtlicue/"
     },
     {
         title: "parícutin",
         year: "2023",
-        description: "fotogrametría de roca volcánica extraída del volcán paricutín.",
+        description: "Fotogrametría de roca volcánica extraída del volcán Paricutín.",
         slug: "paricutin",
         imgsrc: "../../obras/paricutin.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual 3d paricutin",
+        imgalt: "Captura de pantalla de la experiencia virtual 3d Paricutin",
         iframesrc: "https://sbector.com/paricutin/"
     },
     {
         title: "subtle-sync",
         year: "2023",
-        description: "webapp y smartphones.",
+        description: "Webapp y video installación para múltiples pantallas",
         slug: "subtle",
         imgsrc: "../../obras/paricutin.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual 3d subtle sync.",
+        imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
         iframesrc: "https://sbector.com/subtle-sync/"
-    },{
-        title: "autorretrato",
-        year: "2021",
-        description: "webapp.",
-        slug: "autorretrato",
-        imgsrc: "../../obras/autorretrato.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual autorretrato.",
-        iframesrc: "",
-        link:"https://autorretrato.glitch.me/"
     },{
         title: "inconspicuo",
         year: "2018",
-        description: "video a color",
+        description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
         slug: "inconspicuo",
         imgsrc: "../../obras/inconspicuo.jpg",
         imgalt: "Still de video de la obra inconspicuo",
