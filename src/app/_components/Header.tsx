@@ -9,7 +9,7 @@ export default function Header() {
         top-0 
         w-screen
         md:w-[700px] md:mx-auto
-        ">
+        text-center">
             <Nav/>
         </header>
     )
