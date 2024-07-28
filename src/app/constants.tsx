@@ -89,7 +89,7 @@ export const Obras: Obra[] = [
         slug: "inconspicuo2018",
         imgsrc: "../../obras/inconspicuo2018.mp4",
         imgalt: "still de video de la obra inconspicuo en el paraninfo de la universidad de guadalajara",
-        videosrc: "../../obras/inconspicuo2020.jpg",
+        videosrc: "../../obras/inconspicuo2018.mp4",
         iframesrc: ""
     },
 

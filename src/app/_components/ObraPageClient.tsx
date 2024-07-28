@@ -24,7 +24,13 @@ export default function ObraPageClient({ obra }: { obra: Obra }) {
                 <div className={`row-span-6 transition-all ${
                     isFullScreen? "absolute h-[100dvh] w-screen bg-black z-20": "relative landscape:col-span-3 landscape:pr-4"
                 }`}>
-                    {obra.iframesrc?(
+                    {obra.videosrc? (
+                        <video 
+                        src={obra.videosrc}
+                        className="bg-black top-0 left-0 w-full h-full"
+                        autoPlay loop muted>
+                        </video>
+                    ) : obra.iframesrc?(
                         <iframe
                         id={obra.slug}
                         title={obra.title}
