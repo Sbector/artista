@@ -16,7 +16,6 @@ export default function Wrapper({
         pb-[15px]
         px-0 snap-start
         landscape:pt-[95px]
-        landscape:pb-[25px]
         `}>
             {children}
         </div>

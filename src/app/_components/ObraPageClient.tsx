@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Button from "@/app/_components/Button";
 import Wrapper from "@/app/_components/Wrapper";
 import Image from "next/image";
-import { Dialog, Transition } from '@headlessui/react';
-import { Fragment } from 'react';
 
 export default function ObraPageClient({ obra }: { obra: any }) {
     const [isFullScreen, setIsFullScreen] = useState(false);
@@ -19,8 +17,8 @@ export default function ObraPageClient({ obra }: { obra: any }) {
             <Wrapper className={`relative px-0 grid gap-2 ${
                 isFullScreen? "flex": "grid-rows-9 landscape:grid-cols-6 landscape:grid-rows-1"
             }`}>
-                <div className={` row-span-6 transition-all ${
-                    isFullScreen? "absolute h-[100dvh] w-screen z-10": "relative landscape:col-span-3 landscape:pr-4"
+                <div className={`row-span-6 transition-all ${
+                    isFullScreen? "absolute h-[100dvh] w-screen bg-black z-20": "relative landscape:col-span-3 landscape:pr-4"
                 }`}>
                     {obra.iframesrc?(
                         <iframe
@@ -32,28 +30,27 @@ export default function ObraPageClient({ obra }: { obra: any }) {
                     />
                     ): (
                         <Image
-                            src={obra.imgsrc}
-                            alt={obra.imgalt}
-                            layout="responsive"
-                            width={300}
-                            height={400}
-                            className="object-contain"
-                        />
+                        src={obra.imgsrc}
+                        alt={obra.imgalt}
+                        layout="fill"
+                        objectFit={`${isFullScreen? "contain": "cover"}`}
+                        priority
+                    />
                     )}
                     
                     <button
                         onClick={toggleFullScreen}
-                        className={`absolute right-4 text-emerald-100 p-2 ${
-                            isFullScreen? "bottom-4" : "top-4"
+                        className={`absolute right-4 text-sm text-emerald-100 px-4 transition-all animate-pulse ${
+                            isFullScreen? "w-8 h-8 bottom-4" : "top-4"
                         }`}>
                         {isFullScreen ? "X" : "Fullscreen"}
                     </button>
                 </div>
                 <div className="
-                px-8
-                flex flex-col landscape:justify-end
-                row-span-3 
-                landscape:col-span-3 landscape:pr-3">
+                    px-8
+                    flex flex-col landscape:justify-center
+                    row-span-3 
+                    landscape:col-span-3 landscape:pr-3">
                     <h1 className="font-medium 
                     text-xl xl:text-3xl">
                         {obra.title}, <span className="font-light text-emerald-100">{obra.year}</span>
