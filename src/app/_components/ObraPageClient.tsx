@@ -6,6 +6,7 @@ import Wrapper from "@/app/_components/Wrapper";
 import Image from "next/image";
 import FullScreenIcon from "./icons/FullScreen";
 import ExitFullScreenIcon from "./icons/ExitFullScreen";
+import Link from "next/link";
 
 export default function ObraPageClient({ obra }: { obra: any }) {
     const [isFullScreen, setIsFullScreen] = useState(false);
@@ -67,6 +68,10 @@ export default function ObraPageClient({ obra }: { obra: any }) {
                     ">
                         {obra.description}
                     </p>
+                    {obra.link? (<Link href={obra.link} target="blank" className="font-light text-emerald-100">
+                        ir a webapp
+                        </Link>
+                        ):(<></>)}
                     <Button className="absolute right-8 bottom-4" href="/archivo/obra">obra</Button>
                 </div>
 
