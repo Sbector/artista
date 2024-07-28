@@ -11,7 +11,7 @@ export default function Nav() {
             mx-4
             py-1">
                 <div className="
-            py-1">
+            py-1 pr-4">
                     <Link href="/" className="
                 font-light
                 text-emerald-100 
