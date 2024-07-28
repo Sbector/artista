@@ -14,7 +14,7 @@ export default function Nav() {
             py-1">
                     <Link href="/" className="
                 font-light
-                text-gray-200 
+                text-emerald-100 
                 text-2xl">sbector</Link>
                 </div>
                 <ul className="

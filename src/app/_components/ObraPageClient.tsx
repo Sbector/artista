@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Button from "@/app/_components/Button";
 import Wrapper from "@/app/_components/Wrapper";
 import Image from "next/image";
+import FullScreenIcon from "./icons/FullScreen";
+import ExitFullScreenIcon from "./icons/ExitFullScreen";
 
 export default function ObraPageClient({ obra }: { obra: any }) {
     const [isFullScreen, setIsFullScreen] = useState(false);
@@ -40,10 +42,9 @@ export default function ObraPageClient({ obra }: { obra: any }) {
                     
                     <button
                         onClick={toggleFullScreen}
-                        className={`absolute right-4 text-sm text-emerald-100 px-4 transition-all animate-pulse ${
-                            isFullScreen? "w-8 h-8 bottom-4" : "top-4"
-                        }`}>
-                        {isFullScreen ? "X" : "Fullscreen"}
+                        className="absolute right-4 text-emerald-100 top-4">
+                        {isFullScreen ? 
+                        <ExitFullScreenIcon className="size-4"/> : <FullScreenIcon className="size-4"/>}
                     </button>
                 </div>
                 <div className="
