@@ -42,7 +42,7 @@ export default function ObraPageClient({ obra }: { obra: any }) {
                     
                     <button
                         onClick={toggleFullScreen}
-                        className={`absolute right-4 text-emerald-100 w-8 h-8 bottom-4 ${
+                        className={`absolute right-2 text-emerald-100 w-8 h-8 bottom-4 ${
                             isFullScreen? "" : ""
                         }`}>
                         {isFullScreen ? 
