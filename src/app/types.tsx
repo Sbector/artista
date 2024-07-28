@@ -12,6 +12,7 @@ export type Obra = {
     imgsrc: string
     imgalt: string
     iframesrc: string
+    appLink?: string
 }
 
 export type Proyecto = {

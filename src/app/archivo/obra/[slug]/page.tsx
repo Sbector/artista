@@ -17,7 +17,8 @@ export default function ObraPage({ params }: { params: { slug: string } }) {
         slug: "",
         imgsrc: "",
         imgalt: "",
-        iframesrc: ""
+        iframesrc: "",
+        appLink: ""
     };
 
     return <ObraPageClient obra={obra} />;
