@@ -37,7 +37,7 @@ export const Obras: Obra[] = [
         year: "2021",
         description: "webapp.",
         slug: "autorretrato",
-        imgsrc: "../../obras/autorretrato.jpg",
+        imgsrc: "../../obras/selfie.jpg",
         imgalt: "captura de pantalla de la experiencia virtual autorretrato.",
         iframesrc: "",
         appLink:"https://autorretrato.glitch.me/"
@@ -45,7 +45,7 @@ export const Obras: Obra[] = [
     {
         title: "planet",
         year: "2020",
-        description: "video digital monocanal a color, 2:37 min",
+        description: "video digital monocanal a color, 2:37 min (obra realizada en el colectivo DDO).",
         slug: "planet",
         imgsrc: "../../obras/planet.jpg",
         imgalt: "Still de video de la obra planet",
@@ -53,12 +53,43 @@ export const Obras: Obra[] = [
         appLink:""
     },
     {
+        title: "esteganografías",
+        year: "2020",
+        description: "aplicación e imagenes digitales, medidas variables.",
+        slug: "esteganografia",
+        imgsrc: "../../obras/esteganografia.jpg",
+        imgalt: "imagen recodificada",
+        iframesrc: "",
+        appLink:""
+    },
+    /* {
+        title: "contingencia no.3",
+        year: "2020",
+        description: "colage digital, medidas variables.",
+        slug: "contingencia3",
+        imgsrc: "../../obras/contingencia3.jpg",
+        imgalt: "colage digital de escena apocaliptica",
+        iframesrc: "",
+        appLink:""
+    }, */
+    {
+        title: "inconspicuo",
+        year: "2020",
+        description: "circuito eléctrico modificado",
+        slug: "inconspicuo2020",
+        imgsrc: "../../obras/inconspicuo2020.jpg",
+        imgalt: "fotografía de la obra incosnpucuo en rayón 376",
+        iframesrc: "",
+        appLink:""
+    },
+    {
         title: "inconspicuo",
         year: "2018",
         description: "video digital monocanal a color, 4:22 min",
-        slug: "inconspicuo",
-        imgsrc: "../../obras/inconspicuo.jpg",
-        imgalt: "Still de video de la obra inconspicuo",
+        slug: "inconspicuo2018",
+        imgsrc: "../../obras/inconspicuo2018.mp4",
+        imgalt: "still de video de la obra inconspicuo en el paraninfo de la universidad de guadalajara",
+        videosrc: "../../obras/inconspicuo2020.jpg",
         iframesrc: ""
     },
 

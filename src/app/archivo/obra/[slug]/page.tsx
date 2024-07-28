@@ -18,6 +18,7 @@ export default function ObraPage({ params }: { params: { slug: string } }) {
         imgsrc: "",
         imgalt: "",
         iframesrc: "",
+        videosrc: "",
         appLink: ""
     };
 
