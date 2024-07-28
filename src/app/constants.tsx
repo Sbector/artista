@@ -101,7 +101,7 @@ export const Sections: Section[] = [
         route: '/about'
     }, {
         label: 'archivo',
-        route: '/archivo'
+        route: '/archivo/obra'
     }, /*{
         label: 'blog',
         route: '/blog'
