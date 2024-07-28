@@ -7,7 +7,7 @@ export const Obras: Obra[] = [
     {
         title: "chalchiuhtlicue",
         year: "2024",
-        description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
+        description: "Fotogrametría de monolito de la diosa chalchiuhtlicue extraída de San Miguel Coatlinchán.",
         slug: "chalchiuhtlicue",
         imgsrc: "../../obras/paricutin.jpg",
         imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
@@ -16,7 +16,7 @@ export const Obras: Obra[] = [
     {
         title: "parícutin",
         year: "2023",
-        description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
+        description: "Fotogrametría de roca volcánica extraída del volcán Paricutín.",
         slug: "paricutin",
         imgsrc: "../../obras/paricutin.jpg",
         imgalt: "Captura de pantalla de la experiencia virtual 3d Paricutin",
@@ -25,7 +25,7 @@ export const Obras: Obra[] = [
     {
         title: "subtle-sync",
         year: "2023",
-        description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Efficitur mi libero taciti tortor etiam luctus auctor luctus conubia. Nunc efficitur mauris nostra nulla tempor fringilla elementum. Magna ultrices eleifend ultrices nulla cras ultricies. Ut sapien finibus sapien, sagittis turpis lectus magnis potenti. Aliquam inceptos fusce posuere facilisis ultricies augue. Curabitur accumsan dignissim netus, elit consectetur nostra ultricies ultrices. Mattis etiam dictum mauris eu donec platea aenean sapien. Nam litora ligula facilisi nisi pretium fusce consequat mus sollicitudin.",
+        description: "Webapp y video installación para múltiples pantallas",
         slug: "subtle",
         imgsrc: "../../obras/paricutin.jpg",
         imgalt: "Captura de pantalla de la experiencia virtual 3d subtle syn",
@@ -44,7 +44,7 @@ export const Obras: Obra[] = [
 
 export const Sections: Section[] = [
     {
-        label: 'about',
+        label: 'inicio',
         route: '/about'
     }, {
         label: 'archivo',
