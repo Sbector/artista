@@ -29,7 +29,7 @@ export default function ObrasPage() {
                             </li>
                         ))}
                     </ul>
-                    <Button className="absolute right-0 bottom-[-30px]" href="/archivo">archivo</Button>
+                    
                 </div>
                 
             </TextWrapper>

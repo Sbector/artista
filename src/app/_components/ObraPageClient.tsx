@@ -22,7 +22,7 @@ export default function ObraPageClient({ obra }: { obra: Obra }) {
                 isFullScreen? "flex": "grid-rows-9 grid-cols-1 landscape:grid-cols-6 landscape:grid-rows-1"
             }`}>
                 <div className={`row-span-6 transition-all ${
-                    isFullScreen? "absolute h-[100dvh] w-screen bg-black z-20": "relative landscape:col-span-3 landscape:pr-4"
+                    isFullScreen? "absolute h-[100dvh] w-screen bg-black z-20": "relative landscape:col-span-3"
                 }`}>
                     {obra.videosrc? (
                         <video 

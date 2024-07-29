@@ -18,13 +18,13 @@ export default function Contacto() {
                     <h1 className="text-center text-lg font-semibold text-emerald-100 pb-6 md:text-3xl md:pb-10">contáctame</h1>
                     <nav className="flex flex-wrap justify-center gap-2 md:gap-4 h-auto">
                         <SocialPill href="https://github.com/Sbector">
-                            <GithubIcon className="w-4 h-4" />
+                            <GithubIcon className="w-6 h-6" />
                         </SocialPill>
                         <SocialPill href="https://www.instagram.com/saulbector/">
-                            <InstaIcon className="w-4 h-4" />
+                            <InstaIcon className="w-6 h-6" />
                         </SocialPill>
                         <SocialPill href="mailto:sbector.prod@gmail.com">
-                            <MailIcon className="w- h-4"/>email
+                            <MailIcon className="w-6 h-6"/>
                         </SocialPill>
                     </nav>
                 </div>
