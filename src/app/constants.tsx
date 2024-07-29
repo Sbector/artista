@@ -55,7 +55,7 @@ export const Obras: Obra[] = [
     {
         title: "esteganografías",
         year: "2020",
-        description: "aplicación e imagenes digitales, medidas variables.",
+        description: "aplicación e imagenes digitales, medidas variables (obra realizada en el colectivo DDO).",
         slug: "esteganografia",
         imgsrc: "../../obras/esteganografia.jpg",
         imgalt: "imagen recodificada",
@@ -79,6 +79,16 @@ export const Obras: Obra[] = [
         slug: "inconspicuo2020",
         imgsrc: "../../obras/inconspicuo2020.jpg",
         imgalt: "fotografía de la obra incosnpucuo en rayón 376",
+        iframesrc: "",
+        appLink:""
+    },
+    {
+        title: "complete this work wich I continued",
+        year: "2019",
+        description: "rotulo/mural.",
+        slug: "complete",
+        imgsrc: "../../obras/complete.jpeg",
+        imgalt: "fotografía de la obra complete this work wich I continued en espacio cabeza",
         iframesrc: "",
         appLink:""
     },
