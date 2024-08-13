@@ -23,5 +23,3 @@ npm run dev
 ```
 
 4. entra a [http://localhost:3000](http://localhost:3000) en el navegador y comienza a personalizar tu sitio.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
