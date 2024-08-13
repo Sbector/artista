@@ -14,9 +14,9 @@ export default function About() {
         <div>
             <TextWrapper className="felx ">
                 <div className="">
-                    <h1 className="text-center text-lg font-semibold text-emerald-100 pb-6 md:text-3xl md:pb-10">acerca de sbector</h1>
-                    <p className="pb-4 text-pretty">Artista multimedia, productor de arte contemporáneo y programador autodidacta originario de León, Guanajuato. Su trabajo explora la idea de individualidad y del antropocentrismo procurando separarse de la tradición occidental, utilizando técnicas como video, fotogrametría, realidad virtual y net art.</p>
-                    <Link href="./cv_saul_becerra_torres_2024.pdf" target="blank" className="text-emerald-100 font-light">descargar cv</Link>
+                    <h1 className="text-center text-lg font-semibold text-emerald-100 pb-6 md:text-3xl md:pb-10">acerca de...</h1>
+                    <p className="pb-4 text-pretty">este un poryecto de uso libre para generar sitios de artista y/o coleccionista. con esta herramienta puedes crear colecciones de objetos a través de diferentes recursos de reproducción (texto, imagen, video, 3d, etc.).</p>
+                    <p></p>
                 </div>
             </TextWrapper>
         </div>

@@ -12,10 +12,10 @@ const roboto = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "sbector",
-    template: "%s | sbector"
+    default: "artista",
+    template: "%s | artista"
   },
-  description: "sitio del artista sbector"
+  description: "sitio del artista"
 }
 
 

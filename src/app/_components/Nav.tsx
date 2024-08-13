@@ -15,7 +15,7 @@ export default function Nav() {
                     <Link href="/" className="
                 font-light
                 text-emerald-100 
-                text-2xl">sbector</Link>
+                text-2xl">artista</Link>
                 </div>
                 <ul className="
                 flex

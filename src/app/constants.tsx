@@ -5,87 +5,19 @@ import { Proyecto } from "./types"
 
 export const Obras: Obra[] = [
     {
-        title: "chalchiuhtlicue",
-        year: "2024",
-        description: "fotogrametría de monolito de la diosa chalchiuhtlicue extraída de san miguel coatlinchán.",
-        slug: "chalchiuhtlicue",
+        title: "representación 3d",
+        year: "2023",
+        description: "este es un ejemplo de integración de archivos 3d. puedes editar el archivo 'constants.tsx' para editar la información y los orígenes de tus representaciones. esta representación usa un iframe para insetar una escena 3d generada con threejs.",
+        slug: "3d",
         imgsrc: "",
         imgalt: "",
-        iframesrc: "https://sbector.com/chalchiuhtlicue/"
-    },
-    {
-        title: "parícutin",
-        year: "2023",
-        description: "fotogrametría de roca volcánica extraída del volcán paricutín.",
-        slug: "paricutin",
-        imgsrc: "../../obras/paricutin.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual 3d paricutin",
-        iframesrc: "https://sbector.com/paricutin/"
-    },
-    {
-        title: "subtle-sync",
-        year: "2023",
-        description: "webapp y smartphones.",
-        slug: "subtle",
-        imgsrc: "",
-        imgalt: "",
-        iframesrc: "https://sbector.com/subtle-sync/",
-        appLink: "https://sbector.com/subtle-sync/"
-    },
-    {
-        title: "autorretrato",
-        year: "2021",
-        description: "webapp.",
-        slug: "autorretrato",
-        imgsrc: "../../obras/selfie.jpg",
-        imgalt: "captura de pantalla de la experiencia virtual autorretrato.",
-        iframesrc: "",
-        appLink:"https://autorretrato.glitch.me/"
-    },
-    {
-        title: "planet",
-        year: "2020",
-        description: "video digital monocanal a color, 2:37 min (obra realizada en el colectivo DDO).",
-        slug: "planet",
-        imgsrc: "../../obras/planet.jpg",
-        imgalt: "Still de video de la obra planet",
-        iframesrc: "",
+        iframesrc: "https://sbector.com/paricutin/",
         appLink:""
     },
     {
-        title: "esteganografías",
-        year: "2020",
-        description: "aplicación e imagenes digitales, medidas variables (obra realizada en el colectivo DDO).",
-        slug: "esteganografia",
-        imgsrc: "../../obras/esteganografia.jpg",
-        imgalt: "imagen recodificada",
-        iframesrc: "",
-        appLink:""
-    },
-    /* {
-        title: "contingencia no.3",
-        year: "2020",
-        description: "colage digital, medidas variables.",
-        slug: "contingencia3",
-        imgsrc: "../../obras/contingencia3.jpg",
-        imgalt: "colage digital de escena apocaliptica",
-        iframesrc: "",
-        appLink:""
-    }, */
-    {
-        title: "inconspicuo",
-        year: "2020",
-        description: "circuito eléctrico modificado",
-        slug: "inconspicuo2020",
-        imgsrc: "../../obras/inconspicuo2020.jpg",
-        imgalt: "fotografía de la obra incosnpucuo en rayón 376",
-        iframesrc: "",
-        appLink:""
-    },
-    {
-        title: "complete this work wich I continued",
+        title: "representación 2d",
         year: "2019",
-        description: "rotulo/mural.",
+        description: "ejemplo de representación con imagen estática. puedes llevar tus archivos a la carpeta 'public/obras' y agregar el nombre de tu archivo en la sección imgsrc del objeto dentro del archivo 'constants.tsx'",
         slug: "complete",
         imgsrc: "../../obras/complete.jpeg",
         imgalt: "fotografía de la obra complete this work wich I continued en espacio cabeza",
@@ -93,9 +25,9 @@ export const Obras: Obra[] = [
         appLink:""
     },
     {
-        title: "inconspicuo",
+        title: "video",
         year: "2018",
-        description: "video digital monocanal a color, 4:22 min",
+        description: "ejemplo de representación con video.",
         slug: "inconspicuo2018",
         imgsrc: "../../obras/inconspicuo2018.mp4",
         imgalt: "still de video de la obra inconspicuo en el paraninfo de la universidad de guadalajara",
